@@ -16,15 +16,18 @@
 
 .login-form-div{
     width: 50%;
+    display: flex;
+    align-items: center;
     /* background-color: blue; */
 }
 
 .login-form {
     width: 75%;
-    height: 45%;
+    height: 35%;
     max-width: 412px;
     margin-left: 52px;
-    margin-top: 62%;
+    
+    
     /* background-color:red; */
 }
 
