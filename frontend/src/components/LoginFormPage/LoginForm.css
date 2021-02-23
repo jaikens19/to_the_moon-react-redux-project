@@ -48,6 +48,7 @@
     border: 1px solid lightgray;
     height: 30px;
     font-size: small;
+    padding: 0 12px;
 }
 
 .email-field:hover {
@@ -65,8 +66,8 @@
     border: none;
     border-radius: 3px;
     color: white;
-    width: 140px;
-    height: 50px;
+    max-width: 140px;
+    min-height: 50px;
 }
 
 .login-form p {
@@ -83,6 +84,8 @@
     border: 1px solid lightgray;
     height: 30px;
     font-size: small; 
+    padding: 12px;
+   
 }
 
 .password-field {
@@ -91,7 +94,8 @@
     border-radius: 5px;
     height: 90%;
     width: 95%;
-    outline: none;
+    
+    
 }
 
 .password-form-div:hover {
@@ -102,6 +106,19 @@
     /* border: 1px solid #00c109; */
     background-color: green;
     /* outline: none; */
+}
+
+.signup-page-link {
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: small;
+    color: #00c109;
+    font-weight: 535;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background-color: darkgreen;
 }
 
 

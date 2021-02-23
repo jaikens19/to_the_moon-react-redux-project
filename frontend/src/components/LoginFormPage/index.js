@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import './LoginForm.css';
 import LoginImg from '../../images/LoginImg.jpg'
 
@@ -10,10 +10,10 @@ function LoginFormPage() {
     const sessionUser = useSelector(state => state.session.user);
     const [credential, setCredential] = useState('');
     const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false)
     const [errors, setErrors] = useState([]);
+    const [showPassword, setShowPassword] = useState(false)
 
-    function passwordToggle() {
+     function passwordToggle() {
         setShowPassword(!showPassword )
         
     }
@@ -66,7 +66,8 @@ function LoginFormPage() {
                     <i onClick={passwordToggle}>{<i class="fas fa-eye"></i>}</i>
                 </div>       
                 </label>
-                <button type="submit">Sign In</button>
+                <Link className='signup-page-link' to='/signup'>Not yet registered? Signup here</Link>
+                <button className='login-button' type="submit">Sign In</button>
             </form>
         </div>
     </div>
