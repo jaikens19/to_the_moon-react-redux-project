@@ -1,4 +1,4 @@
-.login-page-container{
+.login-page-container {
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -94,7 +94,7 @@
     border-radius: 5px;
     height: 90%;
     width: 95%;
-    
+    background: none;
     
 }
 

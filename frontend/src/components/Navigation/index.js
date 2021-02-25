@@ -13,19 +13,19 @@ function Navigation({ isLoaded }) {
             <ProfileButton user={sessionUser} />
         );
     } else {
-        // sessionLinks = (
-        //     <>
-        //         <NavLink to="/login">Log In</NavLink>
-        //         <NavLink to="/signup">Sign Up</NavLink>
-        //     </>
-        // );
+        sessionLinks = (
+            <>
+                <NavLink to="/login">Log In</NavLink>
+                <NavLink to="/signup">Sign Up</NavLink>
+            </>
+        );
     }
 
     return (
         <ul>
             <li>
-                {/* <NavLink exact to="/">{<i class="fad fa-rocket-launch fa-3x"></i>}</NavLink> */}
-                {/* {isLoaded && sessionLinks} */}
+                <NavLink exact to="/"><i class="fad fa-rocket-launch fa-3x"></i></NavLink>
+                {isLoaded && sessionLinks}
             </li>
         </ul>
     );

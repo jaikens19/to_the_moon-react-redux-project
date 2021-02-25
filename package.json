@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/jaikens19/to_the_moon-react-redux-project/issues"
   },
-  "homepage": "https://github.com/jaikens19/to_the_moon-react-redux-project#readme"
+  "homepage": "https://github.com/jaikens19/to_the_moon-react-redux-project#readme",
+  "dependencies": {
+    "react-toggle": "^4.1.1",
+    "use-dark-mode": "^2.3.1"
+  }
 }

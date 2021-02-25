@@ -1,0 +1,43 @@
+.front-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+
+.front-page-nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding: 12px 0px;
+    background: #1b1b1d
+}
+
+/* .front-page-logo {
+    background-image: url(../../images/feather.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: white;
+} */
+
+.front-page-nav .front-page-logo .front-page-img {
+    position: relative;
+    top: -14px;
+    left: 3px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    background-image: url(../../images/feather.svg);
+    transition: all 0.3s ease-out;
+}
+
+.front-page-nav .front-page-logo h3 {
+    margin-top: 5px;
+    padding: 0px 5px;
+    position: relative;
+    width: 150px;
+    background-color: white;
+}

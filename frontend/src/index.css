@@ -6,13 +6,23 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 html,
 body,
 #root {
   height: 100%;
   width: 100%;
   
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode {
+  background-color: #2f3237;
+  color: #83878c;
+  transition: background-color 0.3s ease;
 }
 
 
