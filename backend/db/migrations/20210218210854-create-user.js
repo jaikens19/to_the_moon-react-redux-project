@@ -33,6 +33,7 @@ module.exports = {
       wallet: {
         type: Sequelize.DECIMAL(20,2),
         allowNull: false,
+        defaultValue: 0.00,
       },
       createdAt: {
         allowNull: false,

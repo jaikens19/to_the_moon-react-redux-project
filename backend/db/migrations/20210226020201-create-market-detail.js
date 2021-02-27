@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable("MarketDetails", {
@@ -9,58 +9,58 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       stockId: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         unique: true,
-        references: { model: "Stock" },
+        references: { model: "Stocks" },
       },
       assets: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       debt: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       dividendYield: {
-        type: Sequelize.DECIMAL(6, 3),
+        type: Sequelize.DECIMAL(8, 3),
       },
       grossProfit: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       inventory: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       netIncome: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       profitMargin: {
-        type: Sequelize.DECIMAL(6, 3),
+        type: Sequelize.DECIMAL(10, 3),
       },
       operatingExpenses: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       operatingIncome: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       priceEarnings: {
-        type: Sequelize.DECIMAL(6, 3),
+        type: Sequelize.DECIMAL(10, 3),
       },
       priceToEarningsRatio: {
-        type: Sequelize.DECIMAL(6, 3),
+        type: Sequelize.DECIMAL(10, 3),
       },
       revenues: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       shares: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       incomeTaxExpense: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       workingCapital: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       salesPerShare: {
-        type: Sequelize.DECIMAL(6, 3),
+        type: Sequelize.DECIMAL(10, 3),
       },
       createdAt: {
         allowNull: false,
@@ -73,6 +73,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('MarketDetails');
-  }
+    return queryInterface.dropTable("MarketDetails");
+  },
 };

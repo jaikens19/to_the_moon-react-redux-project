@@ -25,7 +25,7 @@ function LoginFormPage() {
 
 
     if (sessionUser) return (
-        <Redirect to="/" />
+        <Redirect to="/dashboard" />
     );
 
     const handleSubmit = (e) => {
@@ -72,7 +72,7 @@ function LoginFormPage() {
               <div className="password-form-div">
                 <input
                   className="password-field"
-                  type="text"
+                  type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required

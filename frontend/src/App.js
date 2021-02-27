@@ -6,6 +6,9 @@ import SignupFormPage from "./components/SignupFormPage";
 import FrontPage from './components/FrontPage'
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
+import Dashboard from './components/Dashboard'
+import StockDetailPage from "./components/StockDetailPage";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -44,12 +47,19 @@ function App() {
         <Navigation isLoaded={isLoaded} />
         {isLoaded && (
           <Switch>
+            <Route exact path="/dashboard">
+              <Dashboard />
+            </Route>
             <Route path="/login">
               <LoginFormPage />
             </Route>
             <Route path="/signup">
               <SignupFormPage />
             </Route>
+            <Route path="/stocks/:symbol">
+              <StockDetailPage />
+            </Route>
+            <Redirect to="/dashboard" />
           </Switch>
         )}
       </>

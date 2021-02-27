@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable("Stocks", {
@@ -14,7 +14,7 @@ module.exports = {
         unique: true,
       },
       name: {
-        type: Sequelize.STRING(25),
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
       url: {
@@ -33,19 +33,19 @@ module.exports = {
         type: Sequelize.STRING(50),
       },
       marketcap: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
       },
       employees: {
         type: Sequelize.INTEGER,
       },
       phone: {
-        type: Sequelize.STRING(20),
+        type: Sequelize.STRING(50),
       },
       ceo: {
-        type: Sequelize.STRING(20),
+        type: Sequelize.STRING(255),
       },
       description: {
-        type: Sequelize.STRING(1000),
+        type: Sequelize.STRING(2500),
       },
       hq_address: {
         type: Sequelize.STRING(255),
@@ -64,6 +64,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Stocks');
-  }
+    return queryInterface.dropTable("Stocks");
+  },
 };
