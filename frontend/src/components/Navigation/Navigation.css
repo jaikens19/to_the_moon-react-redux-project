@@ -16,3 +16,44 @@
   color: #83878c;
   transition: background-color 0.3s ease;
 }
+
+.logo {
+  background-image: url(../../images/feather.svg);
+  width: 50px;
+  height: 50px
+}
+
+.dark-mode-button {
+  cursor: pointer;
+  outline: 0;
+  border-radius: 10%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.dark-mode-button:hover {
+   background-color: darkgrey
+}
+
+.dark-mode-button:active {
+   transform: translateX(20px);
+}
+
+.light-mode-button {
+  cursor: pointer;
+  outline: 0;
+  border-radius: 10%;
+  /* background-color: lightgreen; */
+  border: none;
+}
+
+.light-mode-button:hover {
+   background-color: lightgray
+}
+
+.light-mode-button:active {
+   transform: translateX(-20px);
+}
+
+
