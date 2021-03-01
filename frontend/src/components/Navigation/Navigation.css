@@ -1,0 +1,18 @@
+.navbar {
+    background-color: lightskyblue ;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+.navbar.dark-mode {
+  background-color: #2f3237;
+  color: #83878c;
+  transition: background-color 0.3s ease;
+}

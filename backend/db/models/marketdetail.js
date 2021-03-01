@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     operatingExpenses: DataTypes.INTEGER,
     operatingIncome: DataTypes.INTEGER,
     priceEarnings: DataTypes.DECIMAL,
-    priceToEaringsRatio: DataTypes.DECIMAL,
+    priceToEarningsRatio: DataTypes.DECIMAL,
     revenues: DataTypes.INTEGER,
     shares: DataTypes.INTEGER,
     incomeTaxExpense: DataTypes.INTEGER,

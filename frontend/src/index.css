@@ -4,6 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+
+  --color-darkmode-background: #2f3237;
+  --color-darkmode-text: #fff;
+  --color-darkmode-transition: background-color 0.3s ease;
+
+  --color-lightmode-background: #fff;
+  --color-lightmode-text: #333;
+  --color-lightmode-transition: background-color 0.3s ease;
+  
 }
 
 html,
@@ -15,14 +24,14 @@ body,
 }
 
 body.light-mode {
-  background-color: #fff;
-  color: #333;
-  transition: background-color 0.3s ease;
+  background-color: var(--color-lightmode-background);
+  color: var(--color-lightmode-text);
+  transition: var(--color-lightmode-transition);
 }
 body.dark-mode {
-  background-color: #2f3237;
-  color: #83878c;
-  transition: background-color 0.3s ease;
+  background-color: var(--color-darkmode-background);
+  color: var(--color-darkmode-text);
+  transition: var(--color-darkmode-transition);
 }
 
 

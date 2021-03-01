@@ -68,8 +68,8 @@ function Dashboard(){
     return (
       <div className="chart-dashboard">
         <h1>Line Chart</h1>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart width={400} height={400} data={data}>
+        <ResponsiveContainer>
+          <LineChart data={data}>
             <Line
               type="linear"
               dataKey="bananas"
