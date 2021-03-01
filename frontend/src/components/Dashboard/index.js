@@ -21,44 +21,44 @@ import {
 const data = [
   {
     name: "Page A",
-    apples: 4000,
-    bananas: 2400,
+    closed: 4000,
+    open: 2400,
     amt: 2400,
   },
   {
     name: "Page B",
-    apples: 3000,
-    bananas: 1398,
+    closed: 3000,
+    open: 1398,
     amt: 2210,
   },
   {
     name: "Page C",
-    apples: 2000,
-    bananas: 4200,
+    closed: 2000,
+    open: 4200,
     amt: 2290,
   },
   {
     name: "Page D",
-    apples: 2780,
-    bananas: 3908,
+    closed: 2780,
+    open: 3908,
     amt: 2000,
   },
   {
     name: "Page E",
-    apples: 1890,
-    bananas: 4500,
+    closed: 1890,
+    open: 4500,
     amt: 2181,
   },
   {
     name: "Page F",
-    apples: 2390,
-    bananas: 3800,
+    closed: 2390,
+    open: 3800,
     amt: 2500,
   },
   {
     name: "Page G",
-    apples: 3490,
-    bananas: 4300,
+    closed: 3490,
+    open: 4300,
     amt: 2100,
   },
 ];
@@ -67,19 +67,20 @@ const data = [
 function Dashboard(){
     return (
       <div className="chart-dashboard">
-        <h1>Line Chart</h1>
+        <h1>S&P 500</h1>
+        <h2>$3,811.15</h2>
         <ResponsiveContainer>
           <LineChart data={data}>
             <Line
               type="linear"
-              dataKey="bananas"
-              stroke="yellow"
+              dataKey="open"
+              stroke="#00c109"
               strokeWidth={2}
               dot={false}
             />
             <Line
               type="linear"
-              dataKey="apples"
+              dataKey="closed"
               stroke="red"
               strokeWidth={2}
               dot={false}
